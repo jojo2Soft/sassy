@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ddd823af8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- https://www.creative-tim.com/twcomponents/cheatsheet -->
+  <!-- min la taille du bloc et il va faloir scroller -->
+  <body class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500">
+    <div
+      class="container mx-auto min-h-screen rounded-2xl bg-white dark:bg-stone-800 dark:text-slate-200"
+    >
+      <header
+        class="grid grid-cols-3 items-center border-b px-12 py-4 dark:border-b-0 dark:bg-stone-900 sm:py-8"
+      >
+        <img src="./assets/images/logo.png" alt="" srcset="" class="w-20" />
+        <ul class="flex items-center justify-center">
+          <a href="http://" class="mx-4 font-bold hover:text-sky-500">Home</a>
+          <a href="http://" class="mx-4 font-bold hover:text-sky-500">Event</a>
+          <a href="http://" class="mx-4 font-bold hover:text-sky-500">client</a>
+          <a href="http://" class="mx-4 font-bold hover:text-sky-500"
+            >Invoices</a
+          >
+        </ul>
+        <ul class="flex items-center justify-end gap-x-6">
+          <li class="dark:hidden cursor-pointer" id="dark" >
+            <i class="fa-solid fa-moon"></i>
+          </li>
+          <li class="hidden dark:inline-block cursor-pointer"  id="light" >
+            <i class="fa-solid fa-sun"></i>
+          </li>
+          <li><i class="fa-solid fa-bell text-slate-400-400 fa-xl"></i></li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/22.jpg"
+              alt=""
+              srcset=""
+              class="w-8 rounded-full"
+            />
+          </li>
+        </ul>
+      </header>
+      <section class="flex items-center justify-between px-12 py-8">
+        <ul class="flex items-end justify-between font-bold">
+          <li class="border-r pr-2 hover:text-sky-500">
+            <a href="#" class="active:text-sky-700">Cashflow</a>
+          </li>
+          <li class="border-r px-2 hover:text-sky-500">
+            <a href="#" class="active:text-sky-700">Last7days</a>
+          </li>
+          <li class="border-r px-2 hover:text-sky-500">
+            <a href="#" class="active:text-sky-700">last 30 day</a>s
+          </li>
+          <li class="px-2 hover:text-sky-500">
+            <a href="#" class="active:text-sky-700">last 30 day</a>
+          </li>
+        </ul>
+        <button
+          class="rounded-md bg-blue-500 p-4 text-white hover:text-blue-700"
+        >
+          <i class="fa-solid fa-plus"></i> New Invoice
+        </button>
+      </section>
+      <div
+        class="mb-12 grid grid-cols-4 divide-x border-b border-t dark:divide-x-0 dark:border-b-0 dark:border-t-0 dark:bg-stone-950"
+      >
+        <div class="p-12 text-slate-400">
+          <div class="mb-2 flex justify-between text-sm font-bold">
+            <h4 class="">Revenue</h4>
+            <p>+4.75%</p>
+          </div>
+          <div>
+            <p class="text-4xl text-slate-950 dark:text-slate-200">
+              $405,091.00
+            </p>
+          </div>
+        </div>
+        <div class="p-12 text-slate-400">
+          <div class="mb-2 flex justify-between text-sm font-bold">
+            <h4 class="">Revenue</h4>
+            <p>+4.75%</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-200">
+              $8400,930.0
+            </p>
+          </div>
+        </div>
+        <div class="p-12 text-slate-400">
+          <div class="mb-2 flex justify-between text-sm font-bold">
+            <h4 class="">Revenue</h4>
+            <p class="text-red-500">+4.75%</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-200">
+              $8400,930.0
+            </p>
+          </div>
+        </div>
+        <div class="p-12 text-slate-400">
+          <div class="mb-2 flex justify-between text-sm font-bold">
+            <h4 class="">Revenue</h4>
+            <p>+4.75%</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-slate-900 dark:text-slate-200">
+              $8400,930.0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-1xl dard-bg- border-b px-12 py-8 text-start font-bold dark:border-b-0"
+      >
+        Recent activity
+      </div>
+      <p class="bg-gray-50 px-12 py-2 text-start dark:bg-stone-950">Today</p>
+
+      <ul class="px-12">
+        <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+          <i class="fa-solid fa-play pt-1"></i>
+          <div>
+            <div class="mb-2 flex gap-x-4">
+              <h4 class="font-bold">$7,600.00</h4>
+              <div
+                class="border-green-400-200 rounded border bg-green-50 px-1 text-sm font-bold text-green-600"
+              >
+                Withdraw
+              </div>
+            </div>
+            <p class="text-sm text-slate-400">$500.00 tax</p>
+          </div>
+          <div>
+            <div class="mb-2 flex gap-x-4">
+              <h4 class="font-bold">$7,600.00</h4>
+            </div>
+            <p class="text-sm text-slate-400">Web site disign</p>
+          </div>
+          <div>
+            <div class="mb-2 flex gap-x-4">
+              <h4 class="font-bold">$7,600.00</h4>
+              <div
+                class="border-green-400-200 rounded border bg-green-50 px-1 text-sm font-bold text-green-600"
+              >
+                Withdraw
+              </div>
+            </div>
+            <p class="text-sm text-slate-400">$500.00 tax</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+      const light= document.querySelector('#light')
+      const dark = document.querySelector('#dark')
+      const root = document.documentElement;
+
+      const   toogleDark = ()=>{
+          root.classList.toggle('dark')
+      }
+      light.addEventListener('click', toogleDark);
+      dark.addEventListener('click', toogleDark)
+  </script>
+
+</html>
